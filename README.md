@@ -2,24 +2,28 @@
 
 Скилл [do-product-page](plugins/design-skills/skills/do-product-page/SKILL.md) описывает создание и обновление товарных карточек GUTEN MORGEN через Figma MCP Bridge и Higgsfield.
 
-Скиллы распространяются одним пакетом Codex `design-skills@gutmorgen`. Проверочные скиллы возвращают маркеры версии по явному запросу.
+Скиллы `do-product-page` и `gutmorgen-update` распространяются одним пакетом Codex `design-skills@gutmorgen`.
 
 ## Установка
 
-В локальном Codex можно написать «Установи плагин design-skills из https://github.com/xix-thesunn/gutmorgen-design-skills и проверь оба скилла». Команды для агента с доступом к GitHub и установленным Git:
+В локальном Codex можно написать «Установи плагин design-skills из https://github.com/xix-thesunn/gutmorgen-design-skills и проверь наличие `do-product-page` и `gutmorgen-update`». Команды для агента с доступом к GitHub и установленным Git:
 
 ```text
 codex plugin marketplace add https://github.com/xix-thesunn/gutmorgen-design-skills.git
 codex plugin add design-skills@gutmorgen
 ```
 
-В новом чате попросите вызвать `gutmorgen-check-product-page` и `gutmorgen-check-banner`. Оба ответа должны содержать версию установленного пакета.
+В новом чате проверь, что Codex видит `do-product-page` и `gutmorgen-update`.
 
 ## Обновление
 
-Вызови `gutmorgen-update`. Скилл покажет установленную версию, новую версию и патчноут из GitHub Releases. После твоего подтверждения Codex обновит весь пакет.
+Вызови `gutmorgen-update`. Скилл покажет установленную версию, новую версию и патчноут из GitHub Releases. Перед установкой скилл запросит подтверждение обновления и отдельное согласие на каждый новый скилл. Если ты откажешься хотя бы от одного, текущий пакет останется установленным.
 
 При переходе с версии 0.1.1, в которой скилла обновления ещё нет, выполни `codex plugin marketplace upgrade gutmorgen` и открой новый чат.
+
+## Название релизов
+
+На GitHub используй заголовок `GM Design Skills vX.Y.Z` и тег `vX.Y.Z`. Патчноут публикуй в описании релиза.
 
 ## Подготовка Figma MCP Bridge на Windows
 
