@@ -1,25 +1,18 @@
-# GUTEN MORGEN Design Skills
+# GM Design Skills
 
-Скилл [do-product-page](plugins/design-skills/skills/do-product-page/SKILL.md) описывает создание и обновление товарных карточек GUTEN MORGEN через Figma MCP Bridge и Higgsfield.
+Для установки скопируй этот текст в новый локальный чат Codex:
 
-Скиллы `do-product-page` и `gutmorgen-update` распространяются одним пакетом Codex `design-skills@gutmorgen`.
+> Установи набор GM Design Skills из https://github.com/xix-thesunn/gutmorgen-design-skills. Прочитай README репозитория и следуй инструкции для агента. Покажи версию и патчноут и дождись моего подтверждения.
 
-## Установка
+После установки начни новый чат. Для работы с товарными карточками GUTEN MORGEN используй `$do-product-page`, для проверки обновлений — `$gutmorgen-update`.
 
-В локальном Codex можно написать «Установи плагин design-skills из https://github.com/xix-thesunn/gutmorgen-design-skills и проверь наличие `do-product-page` и `gutmorgen-update`». Команды для агента с доступом к GitHub и установленным Git:
+## Инструкция для агента
 
-```text
-codex plugin marketplace add https://github.com/xix-thesunn/gutmorgen-design-skills.git
-codex plugin add design-skills@gutmorgen
-```
-
-В новом чате проверь, что Codex видит `do-product-page` и `gutmorgen-update`.
-
-## Обновление
-
-Вызови `gutmorgen-update`. Скилл покажет установленную версию, новую версию и патчноут из GitHub Releases. Скилл перечислит новые скиллы и запросит одно подтверждение обновления всего пакета. При отказе текущий пакет останется установленным.
-
-При переходе с версии 0.1.1, в которой скилла обновления ещё нет, выполни `codex plugin marketplace upgrade gutmorgen` и открой новый чат.
+1. Прочитай [инструкцию установки и обновления](plugins/design-skills/skills/gutmorgen-update/SKILL.md) из этого репозитория. При первой установке следуй ей напрямую, даже если скилл ещё недоступен в чате.
+2. Проверь состояние пакета через `codex plugin list --marketplace gutmorgen --json`. Пустой список используй как внутренний сигнал для первой установки. Покажи предлагаемую версию, патчноут и состав пакета и дождись одного подтверждения.
+3. После подтверждения подключи источник командой `codex plugin marketplace add https://github.com/xix-thesunn/gutmorgen-design-skills.git`, если он ещё отсутствует. Если правильный источник уже добавлен, обнови его через `codex plugin marketplace upgrade gutmorgen`. Для первой установки затем выполни `codex plugin add design-skills@gutmorgen`.
+4. Проверь результат. Если установка прошла успешно, попроси пользователя начать новый чат и при необходимости назови нужный скилл. Если команда установки завершилась успешно, но итоговый список пуст, попроси начать новый чат и проверить доступность скиллов. При явной ошибке установки кратко объясни причину и следующий шаг.
+5. В ответах пользователю опускай служебные команды, сырые выводы и пустые списки. Из команд показывай только вызовы скиллов, например `$do-product-page` и `$gutmorgen-update`.
 
 ## Название релизов
 
