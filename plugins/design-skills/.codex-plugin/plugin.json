@@ -1,0 +1,6 @@
+{
+  "name": "design-skills",
+  "version": "0.1.0",
+  "description": "GUT MORGEN design workflows. This release verifies bundle installation.",
+  "skills": "./skills/"
+}
