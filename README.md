@@ -2,7 +2,7 @@
 
 Для установки скопируй этот текст в новый локальный чат Codex:
 
-> Установи набор GM Design Skills из https://github.com/xix-thesunn/gutmorgen-design-skills. Прочитай README репозитория и следуй инструкции для агента. Покажи версию и патчноут и дождись моего подтверждения.
+> Установи набор GM Design Skills из https://github.com/xix-thesunn/gutmorgen-design-skills. Прочитай README репозитория и следуй инструкции для агента.
 
 После установки начни новый чат. Для работы с товарными карточками GUTEN MORGEN используй `$do-product-page`, для проверки обновлений — `$gutmorgen-update`.
 
