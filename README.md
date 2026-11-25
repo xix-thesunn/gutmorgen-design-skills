@@ -1,6 +1,8 @@
 # GUTEN MORGEN Design Skills
 
-Версия 0.1.1 проверяет распространение двух скиллов как одного плагина Codex `design-skills@gutmorgen`. Проверочные скиллы возвращают маркеры версии по явному запросу.
+Скилл [do-product-page](plugins/design-skills/skills/do-product-page/SKILL.md) описывает создание и обновление товарных карточек GUTEN MORGEN через Figma MCP Bridge и Higgsfield.
+
+Скиллы распространяются одним пакетом Codex `design-skills@gutmorgen`. Проверочные скиллы возвращают маркеры версии по явному запросу.
 
 ## Установка
 
@@ -15,13 +17,9 @@ codex plugin add design-skills@gutmorgen
 
 ## Обновление
 
-Запрос «Обнови design-skills@gutmorgen из GitHub» соответствует команде:
+Вызови `gutmorgen-update`. Скилл покажет установленную версию, новую версию и патчноут из GitHub Releases. После твоего подтверждения Codex обновит весь пакет.
 
-```text
-codex plugin marketplace upgrade gutmorgen
-```
-
-При выпуске обновления увеличивайте версию в манифесте плагина. Оба скилла распространяются одним пакетом из отслеживаемой ветки.
+При переходе с версии 0.1.1, в которой скилла обновления ещё нет, выполни `codex plugin marketplace upgrade gutmorgen` и открой новый чат.
 
 ## Подготовка Figma MCP Bridge на Windows
 

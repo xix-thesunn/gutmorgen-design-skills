@@ -1,6 +1,6 @@
 {
   "name": "design-skills",
-  "version": "0.1.1",
-  "description": "GUT MORGEN design workflows. This release verifies bundle installation.",
+  "version": "0.2.0",
+  "description": "GUTEN MORGEN design workflows. Product cards and carousels in Figma.",
   "skills": "./skills/"
 }
