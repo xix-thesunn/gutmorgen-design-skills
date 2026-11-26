@@ -37,7 +37,3 @@ codex mcp add figma-bridge -- cmd.exe /d /c npx -y @gethopp/figma-mcp-bridge@0.0
 3. Запусти Figma MCP Bridge в этом файле.
 
 После запуска в новой сессии Codex вызови `list_files` и проверь, что Bridge видит нужный файл. Если сервер не зарегистрирован, агент отдельно сообщает причину.
-
-## Статус проверки
-
-Установка набора из GitHub проверена на Windows для версии 0.1.0. Подготовка Bridge в версии 0.1.1 требует проверки в локальной Windows-сессии. Автоматическая установка Node.js, Higgsfield MCP и Portable Git в эту версию не входит.
